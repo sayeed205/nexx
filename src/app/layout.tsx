@@ -1,5 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import {
+    Analytics,
+    ProgressBar,
+    TailwindIndicator,
+    ThemeProvider,
+} from '@/components';
 
 import './globals.css';
 
@@ -17,7 +23,17 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                >
+                    <ProgressBar>{children}</ProgressBar>
+                    <Analytics />
+                    <TailwindIndicator />
+                </ThemeProvider>
+            </body>
         </html>
     );
 }
