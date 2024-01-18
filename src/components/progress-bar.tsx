@@ -2,15 +2,18 @@
 
 import { AppProgressBar as NextProgressBar } from 'next-nprogress-bar';
 
-export const ProgressBar = ({ children }: { children: React.ReactNode }) => (
-    <>
-        {children}
-        <NextProgressBar
-            color="rgb(156, 163, 175, 0.9)"
-            options={{
-                showSpinner: false,
-                trickleSpeed: 100,
-            }}
-        />
-    </>
-);
+export const ProgressBar = ({ children }: { children: React.ReactNode }) => {
+    // then current theme mode using next-themes
+    return (
+        <>
+            {children}
+            <NextProgressBar
+                color="#4fd1c5"
+                options={{
+                    showSpinner: false,
+                    trickleSpeed: 100,
+                }}
+            />
+        </>
+    );
+};

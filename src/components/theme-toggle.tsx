@@ -21,7 +21,7 @@ export function ThemeToggle() {
                 <Button
                     variant="ghost"
                     className={cn(
-                        'rounded-3xl border-none border-transparent hover:bg-border hover:text-primary focus:ring-transparent focus:ring-offset-0 ',
+                        'rounded-3xl border-none border-transparent hover:bg-border focus:ring-transparent focus:ring-offset-0 ',
                     )}
                 >
                     <Icons.sun
