@@ -28,7 +28,7 @@ export const decrypt = (text: string, password: string) => {
             .createHash('sha256')
             .update(password)
             .digest('base64')
-            .substr(0, 32);
+            .slice(0, 32);
         const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
 
         const decrypted = decipher.update(encryptedData);

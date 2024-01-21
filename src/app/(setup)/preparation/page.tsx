@@ -18,14 +18,6 @@ export default function SetupPage() {
             value: process.env.REDIRECT_URI,
         },
         {
-            name: 'Auth API URL',
-            value: apiConfig.authApi,
-        },
-        {
-            name: 'Drive API URL',
-            value: apiConfig.driveApi,
-        },
-        {
             name: 'API Scope',
             value: apiConfig.scope,
         },

@@ -1,7 +1,9 @@
 import { apiConfig } from '@/config';
 
+import { authApiBaseURL } from '@/lib/utils';
+
 export const genAuthUrl = () => {
-    const { authApi, clientId, redirectUri, scope } = apiConfig;
+    const { clientId, redirectUri, scope } = apiConfig;
 
     // Construct URL parameters for OAuth2
     const params = new URLSearchParams();
@@ -11,5 +13,5 @@ export const genAuthUrl = () => {
     params.append('scope', scope!);
     params.append('response_mode', 'query');
 
-    return `${authApi}?${params.toString()}`;
+    return `${authApiBaseURL}/authorize?${params.toString()}`;
 };

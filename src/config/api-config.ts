@@ -29,20 +29,20 @@ export const apiConfig = {
      */
     scope: 'offline_access files.read.all user.read',
 
-    /**
-     * authApi is the URL to authenticate users with Microsoft Graph API using the OAuth flow.
-     */
-    authApi: 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+    // /**
+    //  * authApi is the URL to authenticate users with Microsoft Graph API using the OAuth flow.
+    //  */
+    // authApi: 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
 
-    /**
-     * driveApi is the URL to get the drive details of the user.
-     */
-    driveApi: 'https://graph.microsoft.com/v1.0/me/drive',
+    // /**
+    //  * driveApi is the URL to get the drive details of the user.
+    //  */
+    // driveApi: 'https://graph.microsoft.com/v1.0/me/drive',
 
-    /**
-     * tokenApi is the URL to get the access token for the user.
-     */
-    tokenApi: 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+    // /**
+    //  * tokenApi is the URL to get the access token for the user.
+    //  */
+    // tokenApi: 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
 
     /**
      * Cache-Control header, check Vercel documentation for more details. The default settings imply:

@@ -1,6 +1,6 @@
 {
     "typescript.tsdk": "./node_modules/typescript/lib",
-    "cSpell.words": ["clsx", "nexx", "Sayed"],
+    "cSpell.words": ["clsx", "ianvs", "nexx", "nprogress", "Sayed"],
     "prettier.prettierPath": "./node_modules/prettier/index.cjs",
     "license.author": "Sayed Ahmed"
 }

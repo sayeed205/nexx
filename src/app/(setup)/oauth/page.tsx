@@ -1,5 +1,7 @@
+import { TokenSetup } from '@/components';
+
 import { genAuthUrl } from '@/lib/utils';
-import { Button, Input } from '@/components/ui';
+import { Button } from '@/components/ui';
 
 const OauthPage = () => {
     const oauthURL = genAuthUrl();
@@ -34,10 +36,7 @@ const OauthPage = () => {
                     To add more than one account, repeat the process above and
                     paste the URL in new box below.
                 </p>
-                <div className="flex m-4">
-                    <Input />
-                    <Button>Verify token</Button>
-                </div>
+                <TokenSetup />
             </div>
 
             {/* </div> */}
