@@ -6,7 +6,7 @@ import {
     ThemeProvider,
 } from '@/components';
 
-import { Header } from '@/components/ui';
+import { Header, Toaster } from '@/components/ui';
 
 import './globals.css';
 
@@ -39,6 +39,7 @@ export default function RootLayout({
                         {children}
                     </ProgressBar>
                     <Analytics />
+                    <Toaster />
                     <TailwindIndicator />
                 </ThemeProvider>
             </body>

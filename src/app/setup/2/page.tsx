@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { CodeInput } from '@/components';
 
 import { genAuthUrl } from '@/lib/utils';
 
@@ -76,8 +75,6 @@ export default function OAuthStep2() {
                                 alt="step 2 screenshot"
                             />
                         </div>
-
-                        <CodeInput />
                     </div>
                 </div>
             </main>

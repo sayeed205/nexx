@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { extractOAuthCode } from '@/lib/utils';
-import { Button, Input } from '@/components/ui';
+import { Button, Input, toast } from '@/components/ui';
 
 export const TokenSetup = () => {
     const [authCode, setAuthCode] = useState('');
@@ -21,17 +21,17 @@ export const TokenSetup = () => {
         const data = await res.json();
 
         if (!data.success) {
-            // return toast({
-            //     title: 'Error',
-            //     description: data.error,
-            //     variant: 'destructive',
-            // });
+            return toast({
+                title: 'Error',
+                description: data.error,
+                variant: 'destructive',
+            });
         }
 
-        // return toast({
-        //     title: 'Success',
-        //     description: data.msg,
-        // });
+        return toast({
+            title: 'Success',
+            description: data.msg,
+        });
     };
 
     return (
